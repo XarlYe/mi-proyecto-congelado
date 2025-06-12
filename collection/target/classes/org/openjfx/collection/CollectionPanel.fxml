@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="150.0" spacing="5.0" styleClass="collection-card" stylesheets="@../../../css/application.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.collection.CollectionPanelController">
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+   <children>
+      <Label fx:id="lblCollectionName" styleClass="collection-title" text="Collection Name" />
+      <Pane fx:id="paneColor" prefHeight="140.0" prefWidth="140.0" style="-fx-background-color: #336699; -fx-background-radius: 8;" />
+      <Label fx:id="lblGameCount" styleClass="collection-count" text="0 Games" />
+   </children>
+</VBox>

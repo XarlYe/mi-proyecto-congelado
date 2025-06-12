@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="232.0" prefWidth="300.0" spacing="10.0" styleClass="dialog-pane" stylesheets="@../../../css/application.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.collection.ProfileDialogController">
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <children>
+      <Label styleClass="dialog-title" text="Edit Profile" />
+      <Label text="Username: " />
+      <TextField fx:id="txtUsername" promptText="Enter your username. . ." />
+      <Label text="Avatar: " />
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <ImageView fx:id="imgPreview" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" styleClass="avatar-image">
+               <image>
+                  <Image url="@../../../avatars/user.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnChooseAvatar" mnemonicParsing="false" text="Change avatar" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Button fx:id="btnOK" defaultButton="true" mnemonicParsing="false" styleClass="primary-button" text="OK" />
+            <Button fx:id="btnCancel" mnemonicParsing="false" styleClass="button-cancel" text="Cancel" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
